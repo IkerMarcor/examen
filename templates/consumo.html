@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}convertidor{% endblock %}
+{% block head %}
+{{super()}}
+{% endblock %}
+{% block body %}
+<div class="container">
+    <form action="" method="post">
+        <div>
+            <label for="cant-gas">Ingrese la cantidad de gasolina consumida</label>
+            <input type="text" id="cant-gas" name="cant-gas">
+        </div>
+        <div>
+            <label for="resultado">{{res}}</label>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" name="MPGkml">MPG a kml</button>
+            <button type="submit" class="btn btn-primary" name="MPG100">MPG a I/100km</button>
+            <button type="submit" class="btn btn-primary" name="kmlMPG">kml a MPG</button>
+            <button type="submit" class="btn btn-primary" name="kml100">kml a I/100km</button>
+            <button type="submit" class="btn btn-primary" name="100MPG">I/100km a MPG</button>
+            <button type="submit" class="btn btn-primary" name="100kml">I/100km a kml</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
